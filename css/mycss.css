@@ -9,3 +9,33 @@
     margin-left: 20rem;
 
 }
+.inquir {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 15px 15px;
+}
+.inquir h4 {
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+    letter-spacing: 0;
+}
+.form-view {
+    width: 100%;
+    float: left;
+    padding: 30px 15px 18px;
+    margin: 0;
+}
+#myDIV {
+    
+    padding: 50px 0;
+    text-align: center;
+    float: left;
+    
+   display: none;
+   /* display: none;*/
+}
+
+
+
