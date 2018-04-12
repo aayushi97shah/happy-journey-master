@@ -5,7 +5,7 @@
 <head>
         <!-- Basic -->
         <meta charset="utf-8">
-        <title>Travelia - Travel Agency, Responsive - Hotel Online Booking</title>
+        <title>Happy Journey</title>
         <meta name="keywords" content="HTML5 Template" />
         <meta name="description" content="World Cup - Responsive HTML5 Template soccer and sports">
         <meta name="author" content="iwthemes.com">  
@@ -52,36 +52,44 @@
         <!-- layout-->
         <div id="layout">
             <!-- Header-->
-            <header id="header" class="header-v1">
-                <!-- Main Nav -->
+             <header id="header" class="header-v1">
+				<!-- Main Nav -->
                 <nav class="flat-mega-menu"> 
-                    <!-- flat-mega-menu class -->
+					<!-- flat-mega-menu class -->
                     <label for="mobile-button"> <i class="fa fa-bars"></i></label><!-- mobile click button to show menu -->
                     <input id="mobile-button" type="checkbox"> 
-                    
-                    <ul class="collapse"><!-- collapse class for collapse the drop down -->
+					
+					<ul class="collapse"><!-- collapse class for collapse the drop down -->
                         <!-- website title - Logo class -->
                         <li class="title">
-                            <a href="Travel Agency Home Page.html"><span>H</span>appy <span>J</span>ourney <span>. </span></a> 
+                            <a href="Travel Agency Home Page.html"><span>H</span>appy <span>J</span>ourney </a> 
                             <!--<i class="fa fa-rocket"></i> -->
                         </li>
                         <!-- End website title - Logo class -->
-                        
-                        <li><a href="Travel Agency Home Page.html">HOME</a></li>
-                        
-                        <li><a> EXPLORE</a>
+						
+						<li><a href="Travel Agency Home Page.html">HOME</a></li>
+						
+						<li><a> EXPLORE</a>
                             <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
-                                <li><a href="hotel-index.html">Destinations</a></li>
-                                <li><a href="hotel-list-view.html">Tours</a></li>
-                                <li><a href="hotel-grid-view.html">Packages</a></li>
-                                <li><a href="hotel-detailed.html">Travel Agencies</a></li>
+                                <li><a href="hotel-index.html">Destinations</a></li>                                
+                                <li><a href="hotel-grid-view.html">Packages</a></li>                                
+								<li><a href="hotel-detailed.html">Travel Agencies</a></li>
                             </ul>
                         </li>
-                        
-                        <li><a href="Travel Agency Home Page.html">ABOUT US</a></li>
-                        <li><a href="Travel Agency Home Page.html">CONTACT US</a></li>
-                        
-                        <li class="login-form"> <i class="fa fa-user"></i><!-- login form -->
+						<li><a href="CustomTour.html">CUSTOM TOUR</a></li>
+						<li><a href="Travel Agency Home Page.html">ABOUT US</a></li>
+						<li><a href="Travel Agency Home Page.html">CONTACT US</a></li>
+						<li><h3><a><i class="fa fa-bell" style="color:#88C425; padding-top:15px; "></i></a></h3>
+							 <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
+                                <li>
+									<a><i class="fa fa-bell"></i>Notification1</a>					
+								</li>
+                                <li>
+									<a><i class="fa fa-bell"></i>Notification2</a>					
+								</li>
+                            </ul>
+						</li>
+						<li class="login-form"><h3 style="color:#88C425;padding-top:15px; margin-left: 8px;"><i class="fa fa-user"></i></h3><!-- login form -->
                             <ul class="drop-down hover-expand">
                                 <li>
                                     <form method="post" action="#">
@@ -105,8 +113,12 @@
                                 </li>
                             </ul>
                         </li>
-                </nav>
-            </header>
+						
+						<li>                               
+                            <button class="btn btn-primary" type="submit" name="subscribe" style="padding:4px 15px;margin-bottom: 15px;margin-left: 15px;">SIGN UP</button>                            
+						</li>
+				</nav>
+			</header>
             <!-- End Header-->
 
             <!-- Section Title-->    
@@ -118,14 +130,14 @@
                 <!-- Content Parallax-->
                 <div class="opacy_bg_02">
                      <div class="container">
-                        <h1>Hotel Grid View</h1>
+                        <h1>Custom Tour</h1>
                         <div class="crumbs">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li>/</li>
                                 <li>Hotels</li>  
                                 <li>/</li>
-                                <li>Hotel Grid View</li>  
+                                <li>Custom Tour</li>  
                             </ul>    
                         </div>
                     </div>  
@@ -151,7 +163,7 @@
                             <!-- Left Sidebar-->
                             
                             <div class="col-md-10" style="margin-left: 12rem; ">
-                                <div class="container-by-widget-filter bg-dark color-white" style="height:1500px; margin-top: 10px;">
+                                <div class="container-by-widget-filter bg-dark color-white" style="height:675px; margin-top: 10px;">
                                     <!-- Widget Filter -->
                                     <aside class="widget padding-top-mini">
                                         <h3 class="title-widget">Custom Tour</h3>
@@ -159,54 +171,35 @@
                                         <!-- FILTER widget-->
                                         <div class="filter-widget">
                                             <form action="#">
-                                                <input type="text" required="required" placeholder="Destination" class="input-large" style="width:45%; float: left; color: black; font-weight: bold;">
+                                                <input type="text" required="required" placeholder="Destination" class="input-large" style="width:45%; float: left; color: black; font-weight: bold;" name="destination">
 
-                                                <input type="text" required="required" placeholder="Departure City" class="input-large" style="width:45%; float:left; margin-left: 60px; color: black; font-weight: bold;">
+                                                <input type="text" required="required" placeholder="Departure City" class="input-large" style="width:45%; float:left; margin-left: 60px; color: black; font-weight: bold;" name="departure_city">
 
-                                                <input type="text" required="required" placeholder="Name" style="width:45%; float: left; color: black; font-weight: bold;">
-
-                                                <input type="tel" required="required" placeholder="Phone No" style="width:45%; float: left; margin-left: 60px;color: black; font-weight: bold;">
-
-
-                                                <input type="text" required="required" placeholder="Start Date" class="date-input  " style="clear: both; width: 45%;float:left;color: black; font-weight: bold;">
+                                               
 
                                                 
-                                                <input type="text" required="required" placeholder="End Date" class="date-input  " style=" width:45%;float: left; margin-left: 60px;color: black; font-weight: bold;">
-
-                                                 <input type="email" required="required" placeholder="Email Id" style=" width: 45%;float:left;color: black; font-weight: bold;">
-
-                                                 <input type="text" required="required" placeholder="Budget for tour" style=" width:45%;float: left; margin-left: 60px;color: black; font-weight: bold;">
-                                                 <input type="text" required="required" placeholder="No of Guest"  style="width:96%;color: black; font-weight: bold;">
 
 
-                                                     <input type="button" value="Search" style="width:40%; margin-left: 13rem !important; background-color:#88C425;" onclick="myfunction()">
+                                                <input type="text" required="required" placeholder="Start Date" class="date-input  " style="clear: both; width: 45%;float:left;color: black; font-weight: bold;" name="start_date">
+
+                                                
+                                                <input type="text" required="required" placeholder="Duration" class="date-input  " style=" width:45%;float: left; margin-left: 60px;color: black; font-weight: bold;" name="duration">
+
+                                                 
+
+                                                 <input type="text" required="required" placeholder="Budget for tour" style="clear:both; width:45%;float: left; color: black; font-weight: bold;" name="budget">
+
+                                                  <input type="text" required="required" placeholder="No of Guest" style=" width:45%;float: left; margin-left: 60px;color: black; font-weight: bold;" name="guest">
+                                                  <textarea cols="95" rows="6" placeholder="Message" name="message" style="color: black;font-weight: bold"></textarea>
+                                                
+
+                                                     <input type="submit" value="Search" style="width:40%; margin-left: 13rem !important; background-color:#88C425;">
                                                     <!--  <button onclick="myFunction()" class="btn btn-primary">Search</button> --> 
 
                                                 <!-- <div id="myDIV">
                                                     This is my DIV element.
                                                 </div> -->
 
-                                    <div class="col-md-10" id="myDIV" style="float:left;">
-                                        <div class="img-hover col-md-6" style="float: left!important;">
-                                            <img src="img/hotel-img/d3.jpg" alt="" class="img-responsive " style=" float: left;">
-                                            <!-- <div class="overlay"><a href="img/hotel-img/d3.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div> -->
-                                        </div>
-                                    <div class="col-md-4" style="float:left;">
-                                        <div class="info-gallery" style="float:left;">
-                                            <h3>
-                                                Dubai Group Tour(Emirates)
- <br>
-                                                <span></span>
-                                            </h3>
-                                            <hr class="separator">
-                                            <p><strong>6 Days, 5 Nights.</strong></p>
-                                             <p>FROM</p> 
-                                               <p><strong>56,000/PP</strong></p>
-                                           
-                                            <div class="content-btn"><a href="#" class="btn btn-primary">View Details</a></div>
-                                           
-                                        </div>
-                                    </div>
                                                 
                                             </form>
                                                 
@@ -409,41 +402,33 @@
             <!-- End Content Central -->
       
             <!-- footer-->
-            <footer id="footer" class="footer-v1">
+             <footer id="footer" class="footer-v1">
                 <div class="container">
                     <div class="row">
                         <!-- Title Footer-->
                         <div class="col-md-5">
                             <div class="title-footer">
                                 <h2>Save on your plans!
-                                <br> <span>Select Travelia Theme And Receive</span>
-                                <br> our discounts by e-mail.</h2>
+                                <br> <span>Select Happy Journey to book a pocket friendly </span>
+                                <br>amazing trip</h2>
                             </div>
 
-                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip travelia.com.</p>
+                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of packages so that you can choose what you want and enjoy your stay without problems. Book your trip NOW.</p>
                         </div>
                         <!-- End Title Footer-->
 
                         <div class="col-md-7">
                             <div class="row">                             
-                                <!-- Social Us-->
-                                <div class="col-md-3">
-                                    <h3>FOLLOW US</h3>
-                                    <ul class="social">
-                                        <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#">Facebook</a></li>
-                                        <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#">Twitter</a></li>
-                                        <li class="github"><span><i class="fa fa-github"></i></span><a href="#">Github</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Social Us-->
+                                
                                 
                                 <!-- Recent links-->
                                 <div class="col-md-5">
-                                    <h3>TRAVEL SPECIALISTS </h3>
+                                    <h3>TRAVEL Categories </h3>
                                     <ul>
-                                        <li><i class="fa fa-check"></i> <a href="#">Golf Vacations</a></li>
-                                        <li><i class="fa fa-check"></i> <a href="#">Disney Parks Vacations</a></li>
-                                        <li><i class="fa fa-check"></i> <a href="#">Vacations As Advertised</a></li>                                    
+                                        <li><i class="fa fa-check"></i> <a href="#">Family</a></li>
+                                        <li><i class="fa fa-check"></i> <a href="#">Business</a></li>
+                                        <li><i class="fa fa-check"></i> <a href="#">Honeymoon</a></li>
+										<li><i class="fa fa-check"></i> <a href="#">Adventure</a></li> 										
                                     </ul>
                                 </div>
                                 <!-- End Recent links-->
@@ -453,13 +438,13 @@
                                    <h3>CONTACT US</h3>
                                    <ul class="contact_footer">
                                         <li>
-                                            <i class="fa fa-envelope"></i> <a href="#">example@example.com</a>
+                                            <i class="fa fa-envelope"></i> <a href="#">happyjourney@gmail.com</a>
                                         </li>
                                         <li>
-                                            <i class="fa fa-headphones"></i> <a href="#">55-5698-4589</a>
+                                            <i class="fa fa-headphones"></i> <a href="#">9999999999</a>
                                          </li>
                                         <li class="location">
-                                            <i class="fa fa-home"></i> <a href="#"> Av new stret - New York</a>
+                                            <i class="fa fa-home"></i> <a href="#"> Gandhinagar - India</a>
                                         </li>                                   
                                     </ul>
                                 </div>
@@ -469,37 +454,7 @@
                             <div class="divisor"></div>
                             
                             <div class="row">
-                                <!-- Newsletter-->
-                                <div class="col-md-12">
-                                    <h3>NEWSLETTER SIGN UP</h3>  
-                                    <form id="newsletterForm" action="http://html.iwthemes.com/travelia/run/php/mailchip/newsletter-subscribe.php">
-                                        <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                                                    <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                                                    <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </form>   
-                                    <div id="result-newsletter"></div>
-                                </div>
-                                <!-- end Newsletter-->
+                                
                             </div>                      
                         </div>
                     </div>
@@ -510,23 +465,22 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5">
-                                <p>&copy; 2015 Travelia . All Rights Reserved.  2010 - 2015</p>
+                                <p>&copy; 2018 Happy Journey . All Rights Reserved.</p>
                             </div>
                             <div class="col-md-7">
                                 <!-- Nav Footer-->
                                 <ul class="nav-footer">
                                     <li><a href="index.html">HOME</a> </li>
-                                    <li><a href="hotel-index.html">HOTELS</a></li>
-                                    <li><a href="flight-index.html">FLIGHTS</a></li> 
-                                    <li><a href="car-index.html">CARS</a></li> 
-                                    <li><a href="cruice-index.html">CRUICES</a></li>                
-                                    <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="hotel-index.html">SIGN UP</a></li>
+                                    <li><a href="flight-index.html">ABOUT US</a></li> 
+                                    <li><a href="car-index.html">CONTACT US</a></li> 
+                                    
                                 </ul>
                                 <!-- End Nav Footer-->
                             </div>
                         </div>
                     </div>
-                
+                </div>
                 <!-- footer Down-->
             </footer>      
             <!-- End footer-->
@@ -547,14 +501,7 @@
         <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>      
         <script type='text/javascript' src='js/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>  
 
-<script>
-function myfunction() {
-    var x = document.getElementById("myDIV");
-    
-        x.style.display = "block";
-    
-}
-</script>
+
         <!-- Maps -->
         <script src="js/maps/gmap3.js"></script>            
         <!--Ligbox--> 
